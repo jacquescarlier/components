@@ -40,5 +40,9 @@ export const accordionData = [
         id: "003"
     },
 ];
-
+export const dropdownData = [
+    {label: "option1", value: "value1", id: "001" },
+    {label: "option2", value: "value2", id:"002"},
+    {label: "option3", value: "value3", id:"003"}
+]
 

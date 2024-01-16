@@ -4,9 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import LoginForm from './containers/loginForm/LoginForm'
 import Feature from './components/feature/Feature'
-import { featuresData } from "./data/data"
 import Accordion from './components/accordion/Accordion'
-import { accordionData } from "./data/data"
+import { accordionData, dropdownData, featuresData } from "./data/data"
+import Dropdown from './components/dropdown/Dropdown'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,7 +38,10 @@ function App() {
           ))}
         </div>
       </section>
-
+      <h2>Dropdown component</h2>
+     
+            <Dropdown dropdownData = {dropdownData} />
+         
 
     </>
   )
