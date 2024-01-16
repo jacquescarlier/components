@@ -6,14 +6,15 @@ import LoginForm from './containers/loginForm/LoginForm'
 import Feature from './components/feature/Feature'
 import { featuresData } from "./data/data"
 import Accordion from './components/accordion/Accordion'
-import {accordionData} from "./data/data"
+import { accordionData } from "./data/data"
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <h1>Components</h1>
-    <h2> login form</h2>
+      <h1>Components</h1>
+      <h2> login form</h2>
       <LoginForm />
       <div className="trait"></div>
       <h2>features component</h2>
@@ -31,12 +32,14 @@ function App() {
       <div className="trait"></div>
       <h2>Accordion component</h2>
       <section className="accordionSection">
-          <div className="accordionBody">
-            {accordionData.map(({ title, content, id }) => (
-              <Accordion key={id} title={title} content={content} />
-            ))}
-          </div>
-        </section>
+        <div className="accordionBody">
+          {accordionData.map(({ title, content, id }) => (
+            <Accordion key={id} title={title} content={content} />
+          ))}
+        </div>
+      </section>
+
+
     </>
   )
 }

@@ -27,14 +27,17 @@ export const accordionData = [
     {
         title: "Discrétion",
         content: "Available for U",
+        id: "001"
     },
     {
         title: "Motivation",
         content: "positiver",
+        id: "002"
     },
     {
         title: "Voyage",
         content: "région à visiter",
+        id: "003"
     },
 ];
 
