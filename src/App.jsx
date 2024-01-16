@@ -12,6 +12,8 @@ function App() {
 
   return (
     <>
+    <h1>Components</h1>
+    <h2> login form</h2>
       <LoginForm />
       <div className="trait"></div>
       <h2>features component</h2>

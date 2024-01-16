@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: grey;
 }
 h2 {
   color: red;
@@ -13,7 +14,7 @@ h2 {
   width: 100%;
   height: 2px;
   background-color: red;
-  margin-top: 1em;
+  margin-top: 3em;
 }
 /* features */
 .features {
@@ -101,7 +102,7 @@ h2 {
 .accordion-content-active {
   display: block;
   overflow: hidden;
-  z-index: -2;
+  z-index: 4;
   background-color: #f6f6f6;
   border-radius: 0px 0px 10px 10px;
   color: #ff6060;
@@ -112,9 +113,6 @@ h2 {
   position: relative;
   top: -10px;
   animation: descending 0.5s linear forwards;
-}
-.accordion-content {
-  animation: descending 5s linear forwards;
 }
 /* animation */
 @keyframes descending {
