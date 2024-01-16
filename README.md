@@ -2,7 +2,7 @@
 liste de composants
 
 - input
--label
+- label
 - button
 - accordion
 
