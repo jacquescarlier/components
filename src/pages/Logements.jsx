@@ -1,6 +1,7 @@
 import Carousel from "../components/carousel/carousel";
 import { logements } from "../data/data"
 import { useParams} from "react-router-dom"
+import "../css/logements.css"
 
 function Logements () {
     const { id } = useParams();
