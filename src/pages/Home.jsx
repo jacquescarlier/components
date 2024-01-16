@@ -11,7 +11,7 @@ function Home () {
     return (
         <>
             <h1>Components</h1>
-            <p>https://github.com/jacquescarlier/components</p>
+            <a className="github" href="https://github.com/jacquescarlier/components" target="_blank" rel="noopener">Github link</a>
             <h2> login form</h2>
             <LoginForm />
             <div className="trait"></div>
