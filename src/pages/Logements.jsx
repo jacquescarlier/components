@@ -1,6 +1,8 @@
 import Carousel from "../components/carousel/carousel";
 import { logements } from "../data/data"
-import { useParams} from "react-router-dom"
+import { useParams, Link} from "react-router-dom"
+
+
 import "../css/logements.css"
 
 function Logements () {
@@ -10,7 +12,12 @@ function Logements () {
 
 return(
     <>
-    <span>Carousel component</span>
+    <Link
+          to={`/`}
+          key={logement.id}
+          className="card"
+        >Home</Link>
+    
     <h2>{logement.title}</h2>
     <Carousel pictures={logement.pictures} title={logement.title} />
     </>
