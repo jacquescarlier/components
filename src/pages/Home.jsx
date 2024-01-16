@@ -1,5 +1,6 @@
 import Accordion from "../components/accordion/Accordion";
 import Card from "../components/card/card";
+import Card2 from "../components/card/card2";
 import Dropdown from "../components/dropdown/Dropdown";
 import Feature from "../components/feature/Feature";
 import LoginForm from "../containers/loginForm/LoginForm";
@@ -40,6 +41,9 @@ function Home () {
             <div className="trait"></div>
             <h2>Card component</h2>
             <Card logements={logements} />
+            <div className="trait"></div>
+            <h2>Card component with Link</h2>
+            <Card2 logements={logements} />
         </>
     )
 }
