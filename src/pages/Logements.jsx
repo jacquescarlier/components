@@ -10,6 +10,7 @@ function Logements () {
 
 return(
     <>
+    <span>Carousel component</span>
     <h2>{logement.title}</h2>
     <Carousel pictures={logement.pictures} title={logement.title} />
     </>
