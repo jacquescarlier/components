@@ -12,6 +12,7 @@ function Home () {
         <>
             <h1>Components</h1>
             <a className="github" href="https://github.com/jacquescarlier/components" target="_blank" rel="noopener">Github link</a>
+            <div className="trait"></div>
             <h2> login form</h2>
             <LoginForm />
             <div className="trait"></div>
