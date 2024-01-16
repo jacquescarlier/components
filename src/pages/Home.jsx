@@ -11,6 +11,7 @@ function Home () {
     return (
         <>
             <h1>Components</h1>
+            <p>https://github.com/jacquescarlier/components</p>
             <h2> login form</h2>
             <LoginForm />
             <div className="trait"></div>

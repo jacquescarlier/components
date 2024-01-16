@@ -41,9 +41,9 @@ export const accordionData = [
     },
 ];
 export const dropdownData = [
-    {label: "option1", value: "value1", id: "001" },
-    {label: "option2", value: "value2", id:"002"},
-    {label: "option3", value: "value3", id:"003"}
+    {label: "fruit", value: "pomme", id: "001" },
+    {label: "légumes", value: "carotte", id:"002"},
+    {label: "viande", value: "poulet", id:"003"}
 ]
 
 export const logements = [
