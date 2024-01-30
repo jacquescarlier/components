@@ -5,7 +5,7 @@ liste de composants
 - label
 - button
 - accordion
-
+![ 1er composant](./public/imgreadme/components1.webp)
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
