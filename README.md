@@ -6,6 +6,11 @@ liste de composants
 - button
 - accordion
 ![ 1er composant](./public/imgreadme/components1.webp)
+![ 2eme composant](./public/imgreadme/components2.webp)
+![ 3eme composant](./public/imgreadme/components3.webp)
+![ 4eme composant](./public/imgreadme/components4.webp)
+![ 1er diaporama](./public/imgreadme/carousel1.webp)
+![2eme diaporama](./public/imgreadme/carousel2.webp)
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
