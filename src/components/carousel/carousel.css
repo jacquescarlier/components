@@ -7,3 +7,7 @@
 .carouselCounter {
     z-index: 10;
 }
+
+.carouselArrow.carouselArrowLeft , .carouselArrow.carouselArrowRight {
+    padding: 12px 6px 5px 6px;
+}

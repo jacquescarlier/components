@@ -27,6 +27,7 @@ export default function Slider({ logement }) {
     return (
         <>
             <p className="index-info"> {sliderIndex}/{logement.pictures.length} </p>
+            <p>Slider avec défilement automatique</p>
             <div className="slider">
                 <p className="image-info"> {logement.title}</p>
                 <img src={logement.pictures[sliderIndex - 1]} alt="" className="slider-img" />

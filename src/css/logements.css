@@ -27,7 +27,13 @@
     transform: translatey(50%);
     z-index: 3;
     cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border: 1px solid white;
+    border-radius: 50%;
+    
 }
+
 
 .carouselArrowRight {
     right: 20px;
