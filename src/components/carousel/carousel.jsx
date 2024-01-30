@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import ArrowRight from "../../pictures/arrow_forward.png"
 import ArrowLeft from "../../pictures/arrow_back.png"
+import "./carousel.css"
 
 const Carousel = ({ pictures, title }) => {
 
@@ -30,7 +31,7 @@ const Carousel = ({ pictures, title }) => {
             <img src={currentPicture} alt={title} className="carouselPicture" />
             <img src={ArrowLeft} alt='Fléche gauche' onClick={previousPicture} className="carouselArrow carouselArrowLeft"></img>
             <img src={ArrowRight} alt="Fléche droite " onClick={nextPicture} className="carouselArrow carouselArrowRight "></img>
-            <div className="carouselCounter"> {pictureCounter}</div>
+            <div className="carouselCounter">{pictureCounter}</div>
         </section>
     )
 }
