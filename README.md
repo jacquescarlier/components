@@ -4,12 +4,17 @@ liste de composants
 - input
 - label
 - button
-- accordion
 ![ 1er composant](./public/imgreadme/components1.webp)
+- icone + titre + description
+- Accordion
 ![ 2eme composant](./public/imgreadme/components2.webp)
+- dropdown + card
 ![ 3eme composant](./public/imgreadme/components3.webp)
+- card with link
 ![ 4eme composant](./public/imgreadme/components4.webp)
+- 1st carousel
 ![ 1er diaporama](./public/imgreadme/carousel1.webp)
+- 2nd carousel auto
 ![2eme diaporama](./public/imgreadme/carousel2.webp)
 # React + Vite
 
