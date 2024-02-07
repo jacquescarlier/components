@@ -1,0 +1,29 @@
+.verificateurDePalindrome {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    gap: 10px;
+}
+.inputPalindrome {
+    background-color: beige;
+    color: #000;
+    font-size: 20px;
+    font-weight: 900;
+
+}
+.palindrome {
+   text-align: center;
+    width: 50%;
+    color: #000;
+    background: #FFF;
+}
+.notPalindrome {
+    text-align: center;
+    width: 50%;
+    color: red;
+    background: #FFF;
+    font-size: 20px;
+    font-weight: 900;
+}

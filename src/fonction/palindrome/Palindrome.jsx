@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import InputForm from '../../components/input/InputForm';
-
+import "./palindrome.css"
 function PalindromeChecker() {
   const [inputValue, setInputValue] = useState('');
   const [isPalindrome, setIsPalindrome] = useState(false);
@@ -19,18 +19,19 @@ function PalindromeChecker() {
   };
 
   return (
-    <div>
+    <div className="verificateurDePalindrome">
       <h2>Vérificateur de Palindrome</h2>
       <InputForm
         type="text"
         value={inputValue}
         onChange={handleInputChange}
         placeholder="Entrez une phrase"
+        className="inputPalindrome"
       />
       {isPalindrome ? (
-        <p>La phrase est un palindrome.</p>
+        <p className="palindrome">La phrase est un palindrome.</p>
       ) : (
-        <p>La phrase n'est pas un palindrome.</p>
+        <p className="notPalindrome">La phrase n'est pas un palindrome.</p>
       )}
     </div>
   );
