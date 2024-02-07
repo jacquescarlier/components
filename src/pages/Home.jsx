@@ -6,6 +6,7 @@ import Feature from "../components/feature/Feature";
 import LoginForm from "../containers/loginForm/LoginForm";
 import { accordionData, dropdownData, featuresData, logements } from "../data/data"
 import PalindromeChecker from "../fonction/palindrome/Palindrome";
+import TodoList from "../fonction/todolist/ToDoList";
 
 function Home() {
 
@@ -49,6 +50,8 @@ function Home() {
             <Card2 logements={logements} />
             <div className="trait"></div>
             <PalindromeChecker />
+            <div className="trait"></div>
+            <TodoList />
             <div className="trait"></div>
         </>
     )
