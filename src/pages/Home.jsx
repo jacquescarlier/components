@@ -5,8 +5,9 @@ import Dropdown from "../components/dropdown/Dropdown";
 import Feature from "../components/feature/Feature";
 import LoginForm from "../containers/loginForm/LoginForm";
 import { accordionData, dropdownData, featuresData, logements } from "../data/data"
+import PalindromeChecker from "../fonction/palindrome/Palindrome";
 
-function Home () {
+function Home() {
 
     return (
         <>
@@ -46,6 +47,9 @@ function Home () {
             <div className="trait"></div>
             <h2>Card component with Link</h2>
             <Card2 logements={logements} />
+            <div className="trait"></div>
+            <PalindromeChecker />
+            <div className="trait"></div>
         </>
     )
 }
