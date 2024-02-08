@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from "../../components/button/Button";
 import "./todolist.css"
+import Checkbox from '../../components/checked/Checkbox';
 
 function TodoList() {
     const [tasks, setTasks] = useState([]);
@@ -43,14 +44,16 @@ function TodoList() {
                     {tasks.map((task, index) => (
                         <li key={index} className="liTodolist">
                             {task}
+                            <div className="box4Btn4Check">
+                            <Checkbox />
                             <Button
                                 title="Delete"
                                 onClick={() => deleteTask(index)}
                                 classButton="todolistSupprimer"
                             />
-
+                            </div>
                         </li>
-                        
+
                     ))}
                 </ul>
             </div>

@@ -7,6 +7,7 @@ import LoginForm from "../containers/loginForm/LoginForm";
 import { accordionData, dropdownData, featuresData, logements } from "../data/data"
 import PalindromeChecker from "../fonction/palindrome/Palindrome";
 import TodoList from "../fonction/todolist/ToDoList";
+import TodoList2 from "../fonction/todolist/Todolist2";
 
 function Home() {
 
@@ -53,6 +54,7 @@ function Home() {
             <div className="trait"></div>
             <TodoList />
             <div className="trait"></div>
+            <TodoList2 />
         </>
     )
 }
