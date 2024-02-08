@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from "../../components/button/Button";
+import "./todolist.css"
 
 function TodoList() {
     const [tasks, setTasks] = useState([]);
@@ -23,31 +24,36 @@ function TodoList() {
     return (
         <div>
             <h2>Todo List</h2>
-            <input
-                type="text"
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-                placeholder="Ajouter une tâche"
-            />
-            <Button
-                onClick={addTask}
-                title="Ajouter"
-                className="TodolistAjouter"
-            />
+            <div className="todolist">
+                <div className="inputAndButtonTodolist">
+                    <input
+                        type="text"
+                        value={inputValue}
+                        onChange={(e) => setInputValue(e.target.value)}
+                        placeholder="Ajouter une tâche"
+                        className="inputTodolist"
+                    />
+                    <Button
+                        onClick={addTask}
+                        title="Add"
+                        classButton="todolistAjouter"
+                    />
+                </div>
+                <ul>
+                    {tasks.map((task, index) => (
+                        <li key={index} className="liTodolist">
+                            {task}
+                            <Button
+                                title="Delete"
+                                onClick={() => deleteTask(index)}
+                                classButton="todolistSupprimer"
+                            />
 
-            <ul>
-                {tasks.map((task, index) => (
-                    <li key={index}>
-                        {task}
-                        <Button
-                            title="Supprimer"
-                            onClick={() => deleteTask(index)}
-                            className="TodolistSupprimer"
-                        />
-
-                    </li>
-                ))}
-            </ul>
+                        </li>
+                        
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 }

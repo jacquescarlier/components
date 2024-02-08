@@ -1,0 +1,39 @@
+.todolist {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+.inputAndButtonTodolist {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.inputTodolist {
+  font-size: 2em;
+  color: #fff;
+  width: 50%;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.todolistAjouter {
+    width: 50%;
+}
+ul {
+  display: flex;
+  flex-flow: column nowrap;
+  
+  list-style-type: none;
+  gap: 10px;
+}
+li {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+  line-height: 47px;
+}
+
+.todolistSupprimer {
+  margin-left: 10px;
+}
