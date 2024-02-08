@@ -5,7 +5,7 @@
 }
 .inputAndButtonTodolist {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 }
 .inputTodolist {
@@ -16,14 +16,14 @@
   padding-left: 10px;
 }
 .todolistAjouter {
-    width: 50%;
+    width: 30%;
 }
-ul {
+.todolist ul {
   display: flex;
   flex-flow: column nowrap;
-  
   list-style-type: none;
   gap: 10px;
+  padding-left: 0;
 }
 li {
   text-align: left;
@@ -35,5 +35,5 @@ li {
 }
 
 .todolistSupprimer {
-  margin-left: 10px;
+  width: 30%;
 }
