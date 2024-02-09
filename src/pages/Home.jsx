@@ -1,6 +1,7 @@
 import Accordion from "../components/accordion/Accordion";
 import Card from "../components/card/card";
 import Card2 from "../components/card/card2";
+import Counter from "../components/counter/Counter";
 import Dropdown from "../components/dropdown/Dropdown";
 import Feature from "../components/feature/Feature";
 import LoginForm from "../containers/loginForm/LoginForm";
@@ -15,6 +16,8 @@ function Home() {
         <>
             <h1>Components</h1>
             <a className="github" href="https://github.com/jacquescarlier/components" target="_blank" rel="noopener">Github link</a>
+            <div className="trait"></div>
+            <Counter />
             <div className="trait"></div>
             <h2> login form</h2>
             <LoginForm />

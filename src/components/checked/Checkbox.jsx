@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Checkbox() {
+function Checkbox({labelCheck}) {
 
     const [isChecked, setIsChecked] = useState(false);
 
@@ -15,7 +15,7 @@ function Checkbox() {
                 checked={isChecked}
                 onChange={handleCheckboxChange}
             />
-            <label>O.K</label>
+            <label>{labelCheck}</label>
         </>
     );
 }

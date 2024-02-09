@@ -14,6 +14,7 @@ function TodoList() {
             setInputValue('');
         }
     };
+ 
 
     // Supprimer une tâche de la liste
     const deleteTask = (index) => {
@@ -45,7 +46,8 @@ function TodoList() {
                         <li key={index} className="liTodolist">
                             {task}
                             <div className="box4Btn4Check">
-                            <Checkbox />
+                            <Checkbox 
+                            />
                             <Button
                                 title="Delete"
                                 onClick={() => deleteTask(index)}
