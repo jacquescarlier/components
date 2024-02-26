@@ -3,7 +3,6 @@ import ClickableCardWithModal from "../components/card/Card3";
 import Card from "../components/card/card";
 import Card2 from "../components/card/card2";
 import ModalComponent from "../components/card/card4";
-import Slider from "../components/carousel/Slider";
 import Counter from "../components/counter/Counter";
 import Cube3D from "../components/cube3D/Cube3D";
 import Dropdown from "../components/dropdown/Dropdown";
