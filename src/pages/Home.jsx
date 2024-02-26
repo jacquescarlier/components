@@ -1,7 +1,11 @@
 import Accordion from "../components/accordion/Accordion";
+import ClickableCardWithModal from "../components/card/Card3";
 import Card from "../components/card/card";
 import Card2 from "../components/card/card2";
+import ModalComponent from "../components/card/card4";
+import Slider from "../components/carousel/Slider";
 import Counter from "../components/counter/Counter";
+import Cube3D from "../components/cube3D/Cube3D";
 import Dropdown from "../components/dropdown/Dropdown";
 import Feature from "../components/feature/Feature";
 import LoginForm from "../containers/loginForm/LoginForm";
@@ -58,6 +62,13 @@ function Home() {
             <TodoList />
             <div className="trait"></div>
             <TodoList2 />
+            <div className="trait"></div>
+            <Cube3D />
+            <div className="trait"></div>
+            <ClickableCardWithModal logements={logements} />
+            <div className="trait"></div>
+            <ModalComponent logements={logements} />
+
         </>
     )
 }
