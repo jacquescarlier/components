@@ -1,5 +1,4 @@
 import Accordion from "../components/accordion/Accordion";
-import ClickableCardWithModal from "../components/card/Card3";
 import Card from "../components/card/card";
 import Card2 from "../components/card/card2";
 import ModalComponent from "../components/card/card4";
@@ -63,8 +62,6 @@ function Home() {
             <TodoList2 />
             <div className="trait"></div>
             <Cube3D />
-            <div className="trait"></div>
-            <ClickableCardWithModal logements={logements} />
             <div className="trait"></div>
             <ModalComponent logements={logements} />
 
