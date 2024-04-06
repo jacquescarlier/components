@@ -1,4 +1,4 @@
-export default function InputForm({ name, type, inputId, autocomplete, onChange, value, disabled, className }) {
+export default function InputForm({ name, type, inputId, autocomplete, onChange, value, disabled, className, placeHolder  }) {
 
     return (
         <>
@@ -11,6 +11,7 @@ export default function InputForm({ name, type, inputId, autocomplete, onChange,
                 value={value}
                 disabled={disabled}
                 className ={className}
+                placeholder= {placeHolder}
             />
         </>
     );

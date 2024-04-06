@@ -6,7 +6,6 @@ import Checkbox from '../../components/checked/Checkbox';
 function TodoList() {
     const [tasks, setTasks] = useState([]);
     const [inputValue, setInputValue] = useState('');
-
     // Ajouter une tâche à la liste
     const addTask = () => {
         if (inputValue.trim() !== '') {
@@ -14,15 +13,12 @@ function TodoList() {
             setInputValue('');
         }
     };
- 
-
     // Supprimer une tâche de la liste
     const deleteTask = (index) => {
         const newTasks = [...tasks];
         newTasks.splice(index, 1);
         setTasks(newTasks);
     };
-
     return (
         <div>
             <h2>Todo List</h2>

@@ -44,7 +44,7 @@ export const dropdownData = [
     {label: "fruit", value: "pomme", id: "001" },
     {label: "légumes", value: "carotte", id:"002"},
     {label: "viande", value: "poulet", id:"003"}
-]
+];
 
 export const logements = [
     {
@@ -111,4 +111,21 @@ export const logements = [
 		]
 	}
 
+];
+export const dataLink = [
+    {
+        title: "Youtube",
+        url: "https://www.youtube.com/?hl=FR&themeRefresh=1",
+        id: "L001"
+    },
+	{
+        title: "WikiStreaming",
+        url: "https://www.youtube.com/?hl=FR&themeRefresh=1",
+        id: "L002"
+    },
+	{
+        title: "AmazonPrime",
+        url: "https://www.youtube.com/?hl=FR&themeRefresh=1",
+        id: "L003"
+    },
 ]

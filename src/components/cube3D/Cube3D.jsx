@@ -49,7 +49,7 @@ function Scene() {
 import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
-
+import "./cube3d.css"
 function Box(props) {
   // This reference will give us direct access to the mesh
   const mesh = useRef();
@@ -75,16 +75,16 @@ function Scene() {
     <Canvas>
       <ambientLight intensity={0.5} />
       <pointLight position={[5, 5, 5]} />
-      <Box position={[-4, 0, 0]} color="blue" scale={[2, 2, 2]}  />
-      <Box position={[0, 0, 0]} color="white" scale={[2, 2, 2]}  />
-      <Box position={[4, 0, 0]} color="red" scale={[2, 2, 2]} />
+      <Box position={[-4, 0, 0]} color="white" scale={[2, 2, 2]}  />
+      <Box position={[0, 0, 0]} color="orange" scale={[2, 2, 2]}  />
+      <Box position={[4, 0, 0]} color="white" scale={[2, 2, 2]} />
     </Canvas>
   );
 }
 
 function Cube3D() {
   return (
-    <div style={{ width: '100vw', height: '600px' }}>
+    <div  className = "cube3d">
       <Scene />
     </div>
   );

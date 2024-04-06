@@ -1,19 +1,24 @@
 import Accordion from "../components/accordion/Accordion";
+import AccordionLow from "../components/accordion/AccordionLow";
+import CardText from "../components/card/CardText";
 import Card from "../components/card/card";
 import Card2 from "../components/card/card2";
 import ModalComponent from "../components/card/card4";
 import Counter from "../components/counter/Counter";
 import Cube3D from "../components/cube3D/Cube3D";
+import NewCube3d from "../components/cube3D/NexCube3d";
 import Dropdown from "../components/dropdown/Dropdown";
 import Feature from "../components/feature/Feature";
 import LoginForm from "../containers/loginForm/LoginForm";
-import { accordionData, dropdownData, featuresData, logements } from "../data/data"
+import { accordionData, dropdownData, featuresData, logements, dataLink } from "../data/data"
 import PalindromeChecker from "../fonction/palindrome/Palindrome";
 import TodoList from "../fonction/todolist/ToDoList";
 import TodoList2 from "../fonction/todolist/Todolist2";
 
 function Home() {
-
+    accordionData.map(({ title, content, id }) => (
+        <Accordion key={id} title={title} content={content} />
+    ))
     return (
         <>
             <h1>Components</h1>
@@ -46,6 +51,13 @@ function Home() {
                 </div>
             </section>
             <div className="trait"></div>
+            <>
+                <p>2ème Acccordion</p>
+                {accordionData.map(({ title, content, id }) => (
+                    <AccordionLow key={id} title={title} content={content} />
+                ))}
+            </>
+            <div className="trait"></div>
             <h2>Dropdown component</h2>
             <Dropdown dropdownData={dropdownData} />
             <div className="trait"></div>
@@ -64,6 +76,10 @@ function Home() {
             <Cube3D />
             <div className="trait"></div>
             <ModalComponent logements={logements} />
+            <div className="trait"></div>
+            <NewCube3d />
+            <div className="trait"></div>
+            <CardText dataLink={dataLink} />
 
         </>
     )
