@@ -76,6 +76,8 @@ h2 {
   flex-direction: column;
   justify-content: center;
   gap: 30px;
+  animation: disapear all 3s;
+  
 }
 .accordion-item {
   width: 100%;
@@ -190,3 +192,16 @@ h2 {
   display: flex;
   align-items: flex-end;
 }
+
+@keyframes disapear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+

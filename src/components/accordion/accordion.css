@@ -1,0 +1,19 @@
+.accordion-title {
+    background-color: #d58e8e;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    max-height: 50px;
+    /*overflow: hidden;*/
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .accordion-item.open .accordion-content {
+    max-height: 200px; /* Valeur de hauteur maximale pour l'animation */
+  }
+  
+  .accordion-item {
+    margin-bottom: 30px;
+  }

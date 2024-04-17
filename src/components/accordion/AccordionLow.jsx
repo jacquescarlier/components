@@ -1,31 +1,27 @@
 import React, { useState } from 'react';
-import './accordionLow.css';
 import Arrow from "../../pictures/arrow_down.png";
-
+import "./accordionLow.css"
 const AccordionLow = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
+
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div className="accordion">
-      <div className="accordion-header" onClick={toggleAccordion}>
-        <h3>{title}</h3>
-        <span className={isOpen ? 'arrow up' : 'arrow down'}>
+    <div className="accordion-item">
+      <div className="accordion-title" onClick={toggleAccordion}>
+        <div className='dropdownTitle'>{title}</div>
         <img
-            src={Arrow}
-            alt="Fléche pour afficher le description"
-            className={isOpen ? "rotated" : "arrow "}
-          />
-        </span>
+          src={Arrow}
+          alt="Fléche pour afficher le description"
+          className={isOpen ? 'arrow up' : 'arrow down'}
+        />
       </div>
-      {isOpen && (
-        <div className="content">
-         <p>{content}</p> 
-        </div>
-      )}
+      <div className={isOpen ? "accordion-content1-active" : "accordion-content1"}>
+        {content}
+      </div>
     </div>
   );
 };

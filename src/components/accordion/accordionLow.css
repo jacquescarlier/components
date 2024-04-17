@@ -1,48 +1,90 @@
-.accordion {
-    position: relative;
-    width: 80%;
-    margin: 0 auto; 
-    margin-bottom: 10px;
-    
-  }
-  
-  .accordion-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    cursor: pointer;
-    background-color: #cf7474; 
-    border-radius: 0.54em;
-  }
-  
-  .accordion-header h3 {
-    margin: 0 0 0.5em 0;
-  }
-  
-  .arrowLow {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 5px 5px 0 5px;
-    transition: transform 3s ease;
-  }
-  
-  .up {
-    border-color: #000 ;
-  }
-  
-  .down {
-    border-color: transparent transparent #000 transparent;
-    
-  }
-.content {
-    background: white;
-    width: 100%;
-    margin-top: -0.5em;
+.accordionSection {
+  border-radius: 10px;
+  padding: 0;
+  margin: 0px 0px 38px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 76px;
+  position: relative;
 }
-  .content p{
-    font-size: 2em;
-    color: gray;
+
+.accordionBody {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  animation: disapear all 3s;
+  
+}
+.accordion-item {
+  width: 100%;
+  top: 0px;
+}
+.accordion-title {
+  z-index: 2;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff6060;
+  border-radius: 10px;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px;
+
+}
+.down {
+  width: 20px;
+  height: 20px;
+  transition: all 300ms ease-in-out;
+  transform: rotate(180deg);
+}
+
+.up {
+  width: 20px;
+  height: 20px;
+  transition: all 300ms ease-in-out;
+  transform: rotate(0deg);
+}
+.accordion-content1 {
+  display: none;
+  position: relative;
+  top: -30px;
+}
+.accordion-content1-active {
+  display: block;
+  overflow: hidden;
+  z-index: 4;
+  background-color: #f6f6f6;
+  border-radius: 0px 0px 10px 10px;
+  color: #ff6060;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 25px;
+  padding: 40px 20px;
+  position: relative;
+  top: -10px;
+  animation: descending 0.5s linear forwards;
+}
+/* animation */
+@keyframes descending {
+  0% {
+    transform: translateY(-20px);
   }
- 
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes ascending {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
