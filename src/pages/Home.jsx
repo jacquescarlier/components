@@ -1,9 +1,6 @@
 import Accordion10 from "../components/accordion/Accord";
 import Accordion2 from "../components/accordion/Accordion";
-import AccordionItem from "../components/accordion/AccordionAnimed";
-
 import AccordionLow from "../components/accordion/AccordionLow";
-import AccordionTiroir from "../components/accordion/Tiroir";
 import CardText from "../components/card/CardText";
 import Card from "../components/card/card";
 import Card2 from "../components/card/card2";
@@ -43,6 +40,15 @@ function Home() {
                     />
                 ))}
             </section >
+            <div className="trait"></div>
+            <h2>Accordion avec animation ouverture/fermeture</h2>
+            <section className="accordionSection">
+                <div className="accordionBody">
+                    {accordionData.map(({ title, content, id }) => (
+                        <Accordion10 key={id} title={title} content={content} />
+                    ))}
+                </div>
+            </section>
             <div className="trait"></div>
             <h2>Accordion2 component</h2>
             <section className="accordionSection">
@@ -86,15 +92,6 @@ function Home() {
             <NewCube3d />
             <div className="trait"></div>
             <CardText dataLink={dataLink} />
-            <div className="trait"></div>
-            <h2>Accordion avec animation ouverture/fermeture</h2>
-            <section className="accordionSection">
-                <div className="accordionBody">
-                    {accordionData.map(({ title, content, id }) => (
-                        <Accordion10 key={id} title={title} content={content} />
-                    ))}
-                </div>
-            </section>
             <div className="trait"></div>
             
         </>
